@@ -1,6 +1,6 @@
 {
   "name": "screen_color_plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin para alterar cores de fundo de tela e adicionar efeitos de botão.",
   "main": "plugin-screen-color.js",
   "repository": {
