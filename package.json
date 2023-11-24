@@ -1,30 +1,32 @@
 {
-    "name": "screen_color_plugin",
-    "version": "1.0.0",
-    "description": "Plugin para alterar cores de fundo de tela e adicionar efeitos de botão.",
-    "main": "plugin-screen-color.js",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/Biasiolo/Screen-Color-Button"
-    },
-    "keywords": [
-      "jquery",
-      "plugin",
-      "screen color",
-      "switch screen color",
-      "escreen efects",
-      "button screen color",
-      "front-end",
-      "button screen"
-    ],
-    "author": "Biasiolo",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/Biasiolo/Screen-Color-Button/issues"
-    },
-    "homepage": "https://github.com/Biasiolo/Screen-Color-Button#readme",
-    "dependencies": {
-      "jquery": "^3.6.0"
-    }
+  "name": "screen_color_plugin",
+  "version": "1.0.0",
+  "description": "Plugin para alterar cores de fundo de tela e adicionar efeitos de botão.",
+  "main": "plugin-screen-color.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biasiolo/Screen-Color-Button.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "screen color",
+    "switch screen color",
+    "escreen efects",
+    "button screen color",
+    "front-end",
+    "button screen"
+  ],
+  "author": "Biasiolo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Biasiolo/Screen-Color-Button/issues"
+  },
+  "homepage": "https://github.com/Biasiolo/Screen-Color-Button#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
-  
+}
