@@ -4,7 +4,7 @@ $(document).ready(function () {
         { nome: "verde", cor: "rgb(43, 226, 113)" },
         { nome: "amarelo", cor: "rgb(177, 226, 43)" },
         { nome: "purple", cor: "rgb(159, 43, 226)" },
-        { nome: "preto", cor: "rgb(5, 5, 5)" },
+        { nome: "preto", cor: "rgb(214, 40, 40)" },
     ];
 
     var corAtual = 0;
