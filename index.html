@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Button Screen Color Plugin. Switch background color.">
+    <meta name="keywords" content="plugin, button screen, button screen color, switch screen color, screen color">
+    <meta name="author" content="Biasiolo">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="plugin-color-screen.js"></script>
-    <title>Seletor de Modo de Tela</title>
+    <script src="plugin-screen-color.js"></script>
+    <title>Plugin Screen Color</title>
 </head>
 <body>
     <nav class="container">
-        <button id="scrollDownButton">color screen</button>
+        <button id="scrollDownButton">screen color</button>
     </nav>
+    <script>
+        $(document).ready(function () {
+          $("#scrollDownButton").scrollColorChange({
+            colors: [
+              { name: "blue", color: "rgb(43, 174, 226)" },
+              { name: "green", color: "rgb(43, 226, 113)" },
+              { name: "yellow", color: "rgb(177, 226, 43)" },
+              { name: "purple", color: "rgb(159, 43, 226)" },
+              { name: "black", color: "rgb(214, 40, 40)" },
+            ],
+          });
+        });
+      </script>
 </body>
 </html>
