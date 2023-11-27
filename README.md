@@ -2,6 +2,10 @@
 
 https://screen-color-button.vercel.app/
 
+## New Feature in version 1.0.5!! 
+Now, it also changes the text color in contrast with the background.
+This simple plugin innovates and customizes your websites!
+
 ## Description
 This is a jQuery plugin that enables developers to add a screen color change button to their web pages. With this plugin, users can customize the background colors of the page and add visual effects to the button.
 
@@ -34,10 +38,11 @@ This is a jQuery plugin that enables developers to add a screen color change but
    </script>
    
 ## Customization
-Customize colors by adding or removing objects in the `colors` array.
+This plugin is highly customizable—tweak the colors to your liking, play with button effects, and more...
 
 ## Contribution
 Feel free to contribute with improvements, bug fixes, or new features. Open an issue or submit a pull request!
+Send a message and let me know how you're using it!
 Let's collaborate!
 
 ## License
