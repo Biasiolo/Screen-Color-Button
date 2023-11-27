@@ -6,21 +6,42 @@
                 { name: "green", color: "rgb(43, 226, 113)" },
                 { name: "yellow", color: "rgb(177, 226, 43)" },
                 { name: "purple", color: "rgb(159, 43, 226)" },
-                { name: "black", color: "rgb(214, 40, 40)" },
+                { name: "red", color: "rgb(214, 40, 40)" },
             ],
+            initialColor: "blue", // Adiciona uma nova opção para a cor inicial
+
+            textColors: [ // Add an array of contrasting text colors
+                { name: "blueText", color: "#66250B" }, // Contrast for blue
+                { name: "greenText", color: "#A60D2C" }, // Contrast for green
+                { name: "yellowText", color: "#080808" }, // Contrast for yellow
+                { name: "purpleText", color: "#020827" }, // Contrast for purple
+                { name: "redText", color: "#D9FEBE" }, // Contrast for black
+            ]
         }, options);
 
-        var currentColorIndex = 0;
+        // Encontrar o índice da cor inicial
+        var initialColorIndex = settings.colors.findIndex(color => color.name === settings.initialColor);
+
+        // Inicia com a cor inicial ou, se não for encontrada, com a primeira cor
+        var currentColorIndex = (initialColorIndex !== -1) ? initialColorIndex : 0;
 
         function changeColor() {
             currentColorIndex = (currentColorIndex + 1) % settings.colors.length;
             updateColor();
         }
 
+
+
         function updateColor() {
             var selectedColor = settings.colors[currentColorIndex].color;
-            $("body").css("background-color", selectedColor);
-            $(this).css("background-color", selectedColor);
+            var selectedTextColor = settings.textColors[currentColorIndex].color;
+            $("body").css({
+                "background-color": selectedColor,
+                "color": selectedTextColor // Set the contrasting text color
+            });
+
+            var textColor = getContrastYIQ(selectedColor);
+            $("body").css("color", textColor); // Set text color to ensure contrast
 
             // Adiciona a classe 'rotacionar' ao display
             $(".scroll-container").addClass("rotacionar");
@@ -35,10 +56,10 @@
             var $this = $(this);
 
             $this.css({
-                fontSize: "16px",
+                fontSize: "12px",
                 margin: "3px",
                 cursor: "pointer",
-                backgroundColor: "black",
+                backgroundColor: "rgb(69, 55, 55);",
                 color: "white",
                 border: "none",
                 borderRadius: "5px",
@@ -54,6 +75,10 @@
                     changeColor();
                 }
             });
+
+            // Inicia com a cor inicial
+            updateColor();
         });
     };
 })(jQuery);
+

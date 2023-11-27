@@ -28,6 +28,7 @@ body {
     margin: 3px;
     cursor: pointer;
     background-color: black;
+    padding: 4px 6px;
     color: white;
     border: none;
     border-radius: 5px;
@@ -37,4 +38,8 @@ body {
         transform: scale(0.95); /* Reduzindo o tamanho do botão */
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     }
+}
+
+.text {
+    margin-left: 40vw;
 }
