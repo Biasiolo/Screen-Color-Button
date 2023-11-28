@@ -7,6 +7,7 @@
                 { name: "yellow", color: "rgb(177, 226, 43)" },
                 { name: "purple", color: "rgb(159, 43, 226)" },
                 { name: "red", color: "rgb(214, 40, 40)" },
+                { name: "black", color: "#080808" },
             ],
             initialColor: "blue", // Adiciona uma nova opção para a cor inicial
 
@@ -15,7 +16,8 @@
                 { name: "greenText", color: "#A60D2C" }, // Contrast for green
                 { name: "yellowText", color: "#080808" }, // Contrast for yellow
                 { name: "purpleText", color: "#020827" }, // Contrast for purple
-                { name: "redText", color: "#D9FEBE" }, // Contrast for black
+                { name: "redText", color: "#D9FEBE" }, // Contrast for red
+                { name: "blackText", color: "#fff" }, // Contrast for black
             ]
         }, options);
 
