@@ -10,7 +10,7 @@ https://www.paypal.com/donate/?hosted_button_id=9LNPLZ6BQ74YS
 
 We are working on the functionality of selecting images.
 
-## New Feature in version 1.0.7!! 
+## New Feature in version 1.0.8!! 
 Now, it also changes the text color in contrast with the background.
 This simple plugin innovates and customizes your websites!
 
@@ -20,7 +20,7 @@ This is a jQuery plugin that enables developers to add a screen color change but
 ## Features
 
 - **Dynamic Color Change:** Choose from a variety of pre-defined colors to customize the appearance of your page.
-- **Button Sink Effect:** 
+- **Button Sink Effect** 
 
 ## How to Use
 
@@ -52,6 +52,9 @@ This plugin is highly customizable—tweak the colors to your liking, play with 
 Feel free to contribute with improvements, bug fixes, or new features. Open an issue or submit a pull request!
 Send a message and let me know how you're using it!
 Let's collaborate!
+
+## Support
+Our dedicated team is here to assist you, ensuring a seamless and positive experience with our products and services.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
