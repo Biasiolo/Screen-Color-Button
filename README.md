@@ -2,10 +2,13 @@
 
 https://screen-color-button.vercel.app/
 
+Aplication example:
+https://station-sports.vercel.app/
 
 If you enjoyed it, please, make a $2 contribution via PayPal to bestkaraokeapp@gmail.com for continuous improvement, and we appreciate it!
+We are working on the functionality of selecting images.
 
-## New Feature in version 1.0.5!! 
+## New Feature in version 1.0.7!! 
 Now, it also changes the text color in contrast with the background.
 This simple plugin innovates and customizes your websites!
 
