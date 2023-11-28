@@ -6,6 +6,8 @@ Aplication example:
 https://station-sports.vercel.app/
 
 If you enjoyed it, please, make a $2 contribution via PayPal to bestkaraokeapp@gmail.com for continuous improvement, and we appreciate it!
+https://www.paypal.com/donate/?hosted_button_id=9LNPLZ6BQ74YS
+
 We are working on the functionality of selecting images.
 
 ## New Feature in version 1.0.7!! 
