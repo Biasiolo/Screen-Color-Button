@@ -7,7 +7,7 @@ If you found this plugin useful, please consider making a $2 contribution via Pa
 
 [Contribute Now](https://www.paypal.com/donate/?hosted_button_id=9LNPLZ6BQ74YS)
 
-### 🚀 New Feature in version 1.0.9!!
+### 🚀 New Feature!!
 Now, experience enhanced customization as the plugin not only changes the background color but also dynamically adjusts the text color for improved contrast. Elevate the visual aesthetics of your websites effortlessly!
 
 ## Description
