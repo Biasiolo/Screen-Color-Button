@@ -35,7 +35,7 @@ body {
     transition: background-color 0.3s, transform 0.3s; /* Adicionado transform à transição */
 
     &:active {
-        transform: scale(0.95); /* Reduzindo o tamanho do botão */
+        transform: scale(0.98); /* Reduzindo o tamanho do botão */
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     }
 }

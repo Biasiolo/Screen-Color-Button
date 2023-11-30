@@ -1,26 +1,19 @@
 # SCREEN COLOR PLUGIN
+Enhance your website's visual appeal with the Screen Color Plugin – a powerful jQuery tool that allows developers to effortlessly integrate a screen color change button into their web pages.
 
-https://screen-color-button.vercel.app/
+Check out the live application example at Screen Color Button.
 
-Aplication example:
-https://station-sports.vercel.app/
+If you found this plugin useful, please consider making a $2 contribution via PayPal to bestkaraokeapp@gmail.com for continuous improvement. Your support is invaluable, and we genuinely appreciate it! Contribute Now
 
-If you enjoyed it, please, make a $2 contribution via PayPal to bestkaraokeapp@gmail.com for continuous improvement, and we appreciate it!
-https://www.paypal.com/donate/?hosted_button_id=9LNPLZ6BQ74YS
-
-We are working on the functionality of selecting images.
-
-## New Feature in version 1.0.8!! 
-Now, it also changes the text color in contrast with the background.
-This simple plugin innovates and customizes your websites!
+### 🚀 New Feature in version 1.0.9!!
+Now, experience enhanced customization as the plugin not only changes the background color but also dynamically adjusts the text color for improved contrast. Elevate the visual aesthetics of your websites effortlessly!
 
 ## Description
-This is a jQuery plugin that enables developers to add a screen color change button to their web pages. With this plugin, users can customize the background colors of the page and add visual effects to the button.
+The Screen Color Plugin offers an easy-to-use solution for developers seeking to add a screen color change button to their web pages. With this plugin, users can seamlessly customize the background colors and incorporate engaging visual effects for an interactive user experience.
 
 ## Features
-
-- **Dynamic Color Change:** Choose from a variety of pre-defined colors to customize the appearance of your page.
-- **Button Sink Effect** 
+Dynamic Color Change: Choose from a variety of pre-defined colors to personalize your page's appearance.
+Button Sink Effect: Add a subtle and stylish button animation to captivate your audience.
 
 ## How to Use
 
