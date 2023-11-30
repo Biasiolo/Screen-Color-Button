@@ -1,9 +1,11 @@
 # SCREEN COLOR PLUGIN
 Enhance your website's visual appeal with the Screen Color Plugin – a powerful jQuery tool that allows developers to effortlessly integrate a screen color change button into their web pages.
 
-Check out the live application example at Screen Color Button.
+**Check out the live application example at [Screen Color Button](https://screen-color-button.vercel.app/).**
 
-If you found this plugin useful, please consider making a $2 contribution via PayPal to bestkaraokeapp@gmail.com for continuous improvement. Your support is invaluable, and we genuinely appreciate it! Contribute Now
+If you found this plugin useful, please consider making a $2 contribution via PayPal to bestkaraokeapp@gmail.com for continuous improvement. Your support is invaluable, and we genuinely appreciate it!
+
+[Contribute Now](https://www.paypal.com/donate/?hosted_button_id=9LNPLZ6BQ74YS)
 
 ### 🚀 New Feature in version 1.0.9!!
 Now, experience enhanced customization as the plugin not only changes the background color but also dynamically adjusts the text color for improved contrast. Elevate the visual aesthetics of your websites effortlessly!
