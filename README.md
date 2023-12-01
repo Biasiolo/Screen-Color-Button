@@ -1,4 +1,5 @@
 # SCREEN COLOR PLUGIN
+![Downloads](https://img.shields.io/npm/dm/screen_color_plugin)
 Enhance your website's visual appeal with the Screen Color Plugin – a powerful jQuery tool that allows developers to effortlessly integrate a screen color change button into their web pages.
 
 **Check out the live application example at [Screen Color Button](https://screen-color-button.vercel.app/).**
