@@ -41,5 +41,18 @@ body {
 }
 
 .text {
-    margin-left: 40vw;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh; /* Garante que o formulário ocupe 100% da altura da tela */
+}
+
+/* Adicione esta regra para centralizar o botão na vertical */
+form input[type="image"] {
+    margin: auto;
 }

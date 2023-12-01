@@ -19,19 +19,28 @@
   </nav>
   <div class="text">
     <h1>SCREEN COLOR</h1>
+    <p>"Support the independent developer, donate $2!"</p>
   </div>
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+      <input type="hidden" name="hosted_button_id" value="ZG43MX2NWBDBA" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+      <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+      </form>
   </header>
         <script>
         $(document).ready(function () {
           $("#scrollDownButton").scrollColorChange({
             colors: [
-              { name: "blue", color: "rgb(43, 174, 226)" },
-              { name: "green", color: "rgb(43, 226, 113)" },
-              { name: "yellow", color: "rgb(177, 226, 43)" },
-              { name: "purple", color: "rgb(159, 43, 226)" },
-              { name: "black", color: "rgb(214, 40, 40)" },
-              { name: "black", color: "#080808" },
+                { name: "blue", color: "rgb(43, 174, 226)" },
+                { name: "green", color: "rgb(43, 226, 113)" },
+                { name: "yellow", color: "rgb(177, 226, 43)" },
+                { name: "purple", color: "rgb(159, 43, 226)" },
+                { name: "red", color: "rgb(214, 40, 40)" },
+                { name: "black", color: "#080808" },
+                { name: "blueToGreen", gradient: "linear-gradient(to right, rgb(43, 174, 226), rgb(43, 226, 113))" },
+                { name: "redToPurple", gradient: "linear-gradient(to right, rgb(214, 40, 40), rgb(159, 43, 226))" },
             ],
+
           });
         });
       </script>
