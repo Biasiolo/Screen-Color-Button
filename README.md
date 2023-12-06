@@ -11,7 +11,7 @@ If you find this plugin valuable, consider contributing to support its continuou
 
 [![Donation Counter](https://img.shields.io/badge/Donations-35-brightgreen)](https://www.paypal.com/donate/?hosted_button_id=9LNPLZ6BQ74YS)
 
-### 🚀 New Feature!!
+### 🚀 New Feature - TEXT CONTRAST!!
 Now, experience enhanced customization as the plugin not only changes the background color but also dynamically adjusts the text color for improved contrast. Elevate the visual aesthetics of your websites effortlessly!
 
 ## Description
