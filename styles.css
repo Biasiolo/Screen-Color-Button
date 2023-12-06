@@ -1,58 +1,72 @@
+/* Resetando estilos padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos globais para o corpo do documento */
 body {
     font-family: Arial, sans-serif;
     transition: background-color 0.5s ease;
+    max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura máxima */
 }
 
-.container {
+/* Estilos para o botão de rolar para baixo */
+#scrollDownButton {
+    font-size: 16px;
+    margin: 4em auto; /* Centraliza verticalmente e ajusta a margem */
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 8px 14px; /* Adiciona padding para melhor legibilidade e toque */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80px;
-    margin-left: 90vw;
-    margin-top: 10vw;
-    border-radius: 8px;
-    background-color: rgb(253, 252, 253);
-    height: 3vw;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#scrollDownButton {
-    font-size: 16px;
-    margin: 3px;
-    cursor: pointer;
-    background-color: black;
-    padding: 4px 6px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s; /* Adicionado transform à transição */
 
     &:active {
-        transform: scale(0.98); /* Reduzindo o tamanho do botão */
+        transform: scale(0.98); /* Reduz o tamanho do botão durante o clique */
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Adaptações para telas menores */
+    @media screen and (max-width: 600px) {
+        margin-top: 20vw;
+        text-align: center;
+        justify-content: center;
+        margin-left: 37vw;
+        padding: 12px 20px;
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 900px) {
+        margin-top: 20vw;
+        text-align: center;
+        justify-content: center;
+        margin-left: 44vw;
+        padding: 6px 12px;
     }
 }
 
+/* Estilos para o texto */
 .text {
     text-align: center;
+    margin-top: 2em;
 }
 
+/* Estilos para o formulário */
 form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh; /* Garante que o formulário ocupe 100% da altura da tela */
+    height: 40vh; /* Garante que o formulário ocupe 40% da altura da tela */
 }
 
-/* Adicione esta regra para centralizar o botão na vertical */
+/*centralizar o botão de imagem do formulário na vertical */
 form input[type="image"] {
     margin: auto;
 }
