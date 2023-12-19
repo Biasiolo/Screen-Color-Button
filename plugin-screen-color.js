@@ -1,5 +1,6 @@
 (function ($) {
     $.fn.scrollColorChange = function (options) {
+        // Default settings
         var settings = $.extend({
             colors: [
                 { name: "blue", color: "rgb(43, 174, 226)" },
@@ -9,7 +10,7 @@
                 { name: "red", color: "rgb(214, 40, 40)" },
                 { name: "black", color: "#080808" },
             ],
-            initialColor: "blue", // Adiciona uma nova opção para a cor inicial
+            initialColor: "blue", // Add a new option for the initial color
 
             textColors: [ // Add an array of contrasting text colors
                 { name: "blueText", color: "#5e1e03" }, // Contrast for blue
@@ -21,18 +22,16 @@
             ]
         }, options);
 
-        // Encontrar o índice da cor inicial
+        // Find the index of the initial color
         var initialColorIndex = settings.colors.findIndex(color => color.name === settings.initialColor);
 
-        // Inicia com a cor inicial ou, se não for encontrada, com a primeira cor
+        // Start with the initial color or, if not found, with the first color
         var currentColorIndex = (initialColorIndex !== -1) ? initialColorIndex : 0;
 
         function changeColor() {
             currentColorIndex = (currentColorIndex + 1) % settings.colors.length;
             updateColor();
         }
-
-
 
         function updateColor() {
             var selectedColor = settings.colors[currentColorIndex].color;
@@ -45,12 +44,12 @@
             var textColor = getContrastYIQ(selectedColor);
             $("body").css("color", textColor); // Set text color to ensure contrast
 
-            // Adiciona a classe 'rotacionar' ao display
-            $(".scroll-container").addClass("rotacionar");
+            // Add the 'rotate' class for display
+            $(".scroll-container").addClass("rotate");
 
-            // Remove a classe 'rotacionar' após 1 segundo
+            // Remove the 'rotate' class after 1 second
             setTimeout(function () {
-                $(".scroll-container").removeClass("rotacionar");
+                $(".scroll-container").removeClass("rotate");
             }, 1000);
         }
 
@@ -58,7 +57,6 @@
             var $this = $(this);
 
             $this.css({
-
                 transition: "background-color 0.3s, transform 0.3s",
             });
 
@@ -72,7 +70,7 @@
                 }
             });
 
-            // Inicia com a cor inicial
+            // Start with the initial color
             updateColor();
         });
     };
