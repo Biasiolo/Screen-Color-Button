@@ -1,5 +1,5 @@
 (function ($) {
-    $.fn.scrollColorChange = function (options) {
+    $.fn.screenColorChange = function (options) {
         // Default settings
         var settings = $.extend({
             colors: [
@@ -10,23 +10,26 @@
                 { name: "red", color: "rgb(214, 40, 40)" },
                 { name: "black", color: "#080808" },
             ],
-            initialColor: "blue", // Add a new option for the initial color
+            initialColor: "blue", // Adicione uma nova opção para a cor inicial
 
-            textColors: [ // Add an array of contrasting text colors
-                { name: "blueText", color: "#5e1e03" }, // Contrast for blue
-                { name: "greenText", color: "#A60D2C" }, // Contrast for green
-                { name: "yellowText", color: "#080808" }, // Contrast for yellow
-                { name: "purpleText", color: "#020827" }, // Contrast for purple
-                { name: "redText", color: "#D9FEBE" }, // Contrast for red
-                { name: "blackText", color: "#fdfc69" }, // Contrast for black
+            textColors: [ // Adicione um array de cores de texto contrastantes
+                { name: "blueText", color: "#5e1e03" }, // Contraste para azul
+                { name: "greenText", color: "#A60D2C" }, // Contraste para verde
+                { name: "yellowText", color: "#080808" }, // Contraste para amarelo
+                { name: "purpleText", color: "#020827" }, // Contraste para roxo
+                { name: "redText", color: "#D9FEBE" }, // Contraste para vermelho
+                { name: "blackText", color: "#fdfc69" }, // Contraste para preto
             ]
         }, options);
 
-        // Find the index of the initial color
+        // Encontre o índice da cor inicial
         var initialColorIndex = settings.colors.findIndex(color => color.name === settings.initialColor);
 
-        // Start with the initial color or, if not found, with the first color
+        // Comece com a cor inicial ou, se não encontrada, com a primeira cor
         var currentColorIndex = (initialColorIndex !== -1) ? initialColorIndex : 0;
+
+        // Identificador para o intervalo de transição automática
+        var autoColorChangeInterval;
 
         function changeColor() {
             currentColorIndex = (currentColorIndex + 1) % settings.colors.length;
@@ -38,19 +41,22 @@
             var selectedTextColor = settings.textColors[currentColorIndex].color;
             $("body").css({
                 "background-color": selectedColor,
-                "color": selectedTextColor // Set the contrasting text color
+                "color": selectedTextColor // Defina a cor de texto contrastante
             });
+        }
 
-            var textColor = getContrastYIQ(selectedColor);
-            $("body").css("color", textColor); // Set text color to ensure contrast
+        // Método para iniciar a transição automática
+        function startAutoColorChange() {
+            autoColorChangeInterval = setInterval(function () {
+                changeColor();
+            }, 2000);
+            console.log("Iniciando a mudança automática de cor");
+        }
 
-            // Add the 'rotate' class for display
-            $(".scroll-container").addClass("rotate");
-
-            // Remove the 'rotate' class after 1 second
-            setTimeout(function () {
-                $(".scroll-container").removeClass("rotate");
-            }, 1000);
+        // Método para parar a transição automática
+        function stopAutoColorChange() {
+            clearInterval(autoColorChangeInterval);
+            console.log("Parando a mudança automática de cor");
         }
 
         return this.each(function () {
@@ -70,8 +76,27 @@
                 }
             });
 
-            // Start with the initial color
+            // Comece com a cor inicial
             updateColor();
+
+            // Adicione o botão de switch para controlar a transição automática
+            var $autoColorChangeSwitch = $('<button id="autoColorChangeSwitch">auto change: OFF</button>').appendTo("body");
+            
+
+            $autoColorChangeSwitch.on("click", function () {
+                if ($(this).hasClass("active")) {
+                    $(this).removeClass("active").text("Auto Change: OFF");
+                    stopAutoColorChange();
+                } else {
+                    $(this).addClass("active").text("Auto Change: ON");
+                    startAutoColorChange();
+                }
+            });
+
+            // Adicione a seguinte linha para parar a transição automática quando a página for fechada
+            $(window).on("beforeunload", function () {
+                stopAutoColorChange();
+            });
         });
     };
 })(jQuery);
