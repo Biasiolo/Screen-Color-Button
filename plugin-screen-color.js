@@ -8,7 +8,7 @@
                 { name: "yellow", color: "rgb(177, 226, 43)" },
                 { name: "purple", color: "rgb(159, 43, 226)" },
                 { name: "red", color: "rgb(214, 40, 40)" },
-                { name: "black", color: "#080808" },
+                { name: "black", color: "rgb(0, 0, 0)" },
             ],
             initialColor: "blue", // Adicione uma nova opção para a cor inicial
 
@@ -80,7 +80,7 @@
             updateColor();
 
             // Adicione o botão de switch para controlar a transição automática
-            var $autoColorChangeSwitch = $('<button id="autoColorChangeSwitch">auto change: OFF</button>').appendTo("body");
+            var $autoColorChangeSwitch = $('<button id="autoColorChangeSwitch">auto change OFF</button>').appendTo("body");
             
 
             $autoColorChangeSwitch.on("click", function () {

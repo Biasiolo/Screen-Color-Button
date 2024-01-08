@@ -17,9 +17,10 @@ body {
     font-size: 16px;
     margin: 4em auto; /* Centraliza verticalmente e ajusta a margem */
     cursor: pointer;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
+    background-color: rgba(211, 211, 211, 0.3);
+    backdrop-filter: blur(20px);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(50, 50, 50, 0.3);
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
     padding: 8px 14px; /* Adiciona padding para melhor legibilidade e toque */
@@ -27,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: 600;
 
     &:active {
         transform: scale(0.98); /* Reduz o tamanho do botão durante o clique */
@@ -75,22 +77,25 @@ form input[type="image"] {
     position: fixed;
     top: 20px; /* Ajuste conforme necessário */
     right: 20px; /* Ajuste conforme necessário */
-    background-color: black;
-    color: white;
-    border: 2px solid white;
+    background-color: rgba(211, 211, 211, 0.3);
+    backdrop-filter: blur(20px);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(50, 50, 50, 0.3);
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
-    padding: 8px 14px; /* Adiciona padding para melhor legibilidade e toque */
+    padding: 2px;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     font-size: 12px;
-    max-width: 110px;
+    max-width: 120px;
+    font-weight: 400;
 }
 
 #autoColorChangeSwitch.active {
     background-color: #4caf50;
-    color: #fff;
+    color: purple;
+    font-weight: 600;
 }
 
 #autoColorChangeSwitch:active {
