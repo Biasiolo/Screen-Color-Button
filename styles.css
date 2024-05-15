@@ -108,6 +108,7 @@ form input[type="image"] {
     align-items: center;
     padding: 20px;
     flex-direction: column;
+    width: 100vw;
 }
 
 img {
