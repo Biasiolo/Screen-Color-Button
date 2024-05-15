@@ -102,4 +102,15 @@ form input[type="image"] {
     transform: scale(0.98);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+img {
+    margin-top: 20px;
+}
 
